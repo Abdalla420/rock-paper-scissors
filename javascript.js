@@ -5,10 +5,10 @@ function getComputerChoice(){
     const random = Math.floor(Math.random() * 3);
     return choices[random];
 }   
-function getHumanChoice(){
-    let choice = prompt("rock, paper, scissors");
-    return choice.toLowerCase();
-}
+// function getHumanChoice(){
+//     let choice = prompt("rock, paper, scissors");
+//     return choice.toLowerCase();
+// }
 
 function playRound(cChoice, hChoice){
         cChoice = getComputerChoice();
