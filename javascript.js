@@ -10,8 +10,8 @@ function getComputerChoice(){
 //     return choice.toLowerCase();
 // }
 
-function playRound(cChoice, hChoice){
-        cChoice = getComputerChoice();
+function playRound(hChoice){
+        let cChoice = getComputerChoice();
     if (cChoice == hChoice){
         console.log("Draw");
     }
@@ -31,14 +31,14 @@ function playRound(cChoice, hChoice){
 //     console.log("Final score is " + humanScore + " to human, and " + computerScore + " to computer");
 // }
 const rockRound = document.querySelector("#rock")
-start.addEventListener("click", () => {
-    playRound("", "rock");
+rockRound.addEventListener("click", () => {
+    playRound("rock");
 })
 const paperRound = document.querySelector("#paper")
-start.addEventListener("click", () => {
-    playRound("", "paper");
+paperRound.addEventListener("click", () => {
+    playRound("paper");
 })
 const scissorsRound = document.querySelector("#scissors")
-start.addEventListener("click", () => {
-    playRound("", "scissors");
+scissorsRound.addEventListener("click", () => {
+    playRound("scissors");
 })
