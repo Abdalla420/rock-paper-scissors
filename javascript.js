@@ -30,7 +30,15 @@ function playRound(cChoice, hChoice){
 //     }
 //     console.log("Final score is " + humanScore + " to human, and " + computerScore + " to computer");
 // }
-const start = document.querySelector("#rock")
+const rockRound = document.querySelector("#rock")
 start.addEventListener("click", () => {
     playRound("", "rock");
+})
+const paperRound = document.querySelector("#paper")
+start.addEventListener("click", () => {
+    playRound("", "paper");
+})
+const scissorsRound = document.querySelector("#scissors")
+start.addEventListener("click", () => {
+    playRound("", "scissors");
 })
