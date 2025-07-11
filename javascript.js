@@ -12,7 +12,6 @@ function getComputerChoice(){
 
 function playRound(cChoice, hChoice){
         cChoice = getComputerChoice();
-        hChoice = getHumanChoice();
     if (cChoice == hChoice){
         console.log("Draw");
     }
