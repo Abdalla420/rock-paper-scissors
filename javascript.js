@@ -25,10 +25,10 @@ function playRound(cChoice, hChoice){
         humanScore++;
     }
 }
-function playGame(){
-    for (let i = 0; i < 5; i++){
-        playRound();
-    }
-    console.log("Final score is " + humanScore + " to human, and " + computerScore + " to computer");
-}
-playGame();
+// function playGame(){
+//     for (let i = 0; i < 5; i++){
+//         playRound();
+//     }
+//     console.log("Final score is " + humanScore + " to human, and " + computerScore + " to computer");
+// }
+playRound();
