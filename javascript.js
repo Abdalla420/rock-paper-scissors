@@ -9,21 +9,27 @@ function getComputerChoice(){
 //     let choice = prompt("rock, paper, scissors");
 //     return choice.toLowerCase();
 // }
+const displayWinner = document.querySelector("#displayWinner");
 
 function playRound(hChoice){
         let cChoice = getComputerChoice();
     if (cChoice == hChoice){
-        console.log("Draw");
+        // console.log("Draw");
+        displayWinner.textContent = "Draw";
     }
     else if(((cChoice == "rock") && (hChoice == "scissors")) || ((cChoice == "paper") && (hChoice == "rock")) || ((cChoice == "scissors") && (hChoice == "paper"))){
-        console.log("You lose! " + cChoice + " beats " + hChoice);
+        // console.log("You lose! " + cChoice + " beats " + hChoice);
+        displayWinner.textContent = "You lose! " + cChoice + " beats " + hChoice;
         computerScore++;
     }
     else{
-        console.log("You win! " + hChoice + " beats " + cChoice);
+        // console.log("You win! " + hChoice + " beats " + cChoice);
+        displayWinner.textContent ="You win! " + hChoice + " beats " + cChoice;
         humanScore++;
     }
 }
+
+const displayResults = document.querySelector("#displayResults");
 // function playGame(){
 //     for (let i = 0; i < 5; i++){
 //         playRound();
